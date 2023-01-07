@@ -21,7 +21,7 @@ const searchMovies = async (title)=>{
 }
 
 useEffect(()=>{
-    searchMovies('Spiderman');
+    searchMovies('avengers');
 },[])
 
   return (
@@ -42,8 +42,8 @@ useEffect(()=>{
         {
             movies?.length > 0 ?
              <div className='container'>
-            {movies.map((movie)=>
-            (<MovieCard
+            {movies.map((movie, index)=>
+            (<MovieCard key={index}
                 movie={movie}
                 />))}
         </div> :

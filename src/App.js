@@ -8,13 +8,6 @@ import MovieCard from './MovieCard'
 
 const API_URL = 'http://www.omdbapi.com?apikey=dda3145'
 
-const movie1 =  {
-        "Title": "Spiderman",
-        "Year": "1990",
-        "imdbID": "tt0100669",
-        "Type": "movie",
-        "Poster": "N/A"
-      }
 
 const App = () => {
 

@@ -40,7 +40,7 @@ useEffect(()=>{
             onClick={()=>searchMovies(searchTerm)}/>
         </div>
         {
-            movies?.length > 0 ?
+            movies.length > 0 ?
              <div className='container'>
             {movies.map((movie, index)=>
             (<MovieCard key={index}
